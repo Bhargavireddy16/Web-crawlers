@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("assets/images/cp.jpg");
+}
+* {
+  box-sizing: border-box;
+}
+
+
+
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  font-size: 80px;
+  border: 10px solid #f1f1f1;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+.column img {
+  margin-top: 12px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.marqueetext {
+  font-family: "Sofia", sans-serif;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+ 
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+}
+
+.container .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 30px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.container .btn:hover {
+  background-color: tomato;
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+  <a href="main.html">Home</a>
+  <a href="file:///C:/Users/hp/AppData/Local/Temp/Rar$EXa9224.43633/projX/pages/Articles.html">Articles</a>
+  <a href="file:///C:/Users/hp/AppData/Local/Temp/Rar$EXa9224.6296/projX/pages/loginform.html">LoginForm</a>
+  <div class="dropdown">
+    <button class="dropbtn">Careerpaths
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="pages/Digitalmarketing.html">Digital Marketing</a>
+      <a href="pages/Photography.html">Photography</a>
+      <a href="pages/Foodtruck.html">Food Truck</a>
+	  <a href="pages/Youtuber.html">Youtuber</a>
+      <a href="pages/Graphicdesigner.html">Graphic Designer</a>
+      <a href="pages/Lifecareercoach.html">Life Career Coach</a>
+    </div>
+  </div> 
+</div>
+
+<marquee width="100%" direction="left" scrollamount="10">
+	<div class="marqueetext">
+		<h1>Start your career journey with us.       We help you build your career.<h1>
+	</div>
+	
+</marquee>
+<div class="bg-text">Find your career path.</div>
+</body>
+</html>
